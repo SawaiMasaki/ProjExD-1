@@ -47,7 +47,7 @@ class Ball: #ボール
         pg.draw.circle(self.sfc, color, (size,size),size)
         self.rct = self.sfc.get_rect() 
         self.rct.center = xy
-        self.vx, self.vy = vxy
+        self.vx , self.vy = vxy
 
     def blit(self, scr: Screen):
         scr.sfc.blit(self.sfc,self.rct)
